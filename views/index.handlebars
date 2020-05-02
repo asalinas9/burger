@@ -1,16 +1,16 @@
 <div class="container">
 
     <div class="jumbotron text-white text-center">
-        <h1>Order Your Burger </h1>
+        <h1 class="display-3">Order Your Burger </h1>
         <br>
-        <h2>Select a Burger or Sandwich</h2>
+        <h2 class="h3">Select a Burger or Sandwich</h2>
         <panel>
             <form class="create-form">
                 <div class="form-group">
                     <label for="newburger">Order Fresh Burger</label>
                     {{!-- <input type="text" id="newburger" name="burger"> --}}
                     <select data-placeholder="" id="newburger" name="burger">
-                        <option value="Nothing Selected" selected>Please Select a Sandwich</option>
+                        <option value="Nothing Selected" selected>Please Select a Burger</option>
                         <option value="CheeseBurger">CheeseBurger</option>
                         <option value="BaconBurger">Bacon Burger</option>
                         <option value="Spicy Chicken">Spicy Chicken</option>
@@ -18,7 +18,7 @@
                         <option value="TripleDeckerBurger">Triple Decker Burger</option>
                     </select>
 
-                    <button type="submit" class="btn btn-success" id="addburger">
+                    <button type="submit" class="btn btn-success btn-sm" id="addburger">
                         <span class="fa fa-thumbs-up"></span>
                     </button>
                 </div>
@@ -39,8 +39,8 @@
                         {{#unless devoured}}
 
                         <span><strong> {{this.id}} - {{this.burger_name}}</strong></span>
-                        <button type="button" class="eatburger btn btn-warning" id="eatbutton" data-id="{{this.id}}"
-                            data-newDevoured="{{devour}}"><span class="fa fa-usd"></span></button>
+                        <button type="button" class="eatburger btn btn-danger" id="eatbutton" data-id="{{this.id}}"
+                            data-newDevoured="{{devour}}"><span class="fa fa-cc-visa"></span></button>
                         <hr>
                         {{/unless}}
                         {{/each}}
