@@ -11,5 +11,5 @@ _CSS_,
 _Javascript_,
 _Node JS_,
 _NPM Packages_,
-_Bootstrap_
+_Bootstrap_,
 _Express_handlebars_
